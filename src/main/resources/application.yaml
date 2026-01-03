@@ -1,3 +1,18 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: fitness-app
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitnessdb-mono
+    username: postgres
+    password: suvam123
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
